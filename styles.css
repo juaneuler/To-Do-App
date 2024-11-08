@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contenedorBotonAgregarTarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+#botonAgregarTarea {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: darkgreen;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    width: 500px;
+    font-size: 20px;
+}
+
+#listaDeTareas {
+    padding: 20px;
+    width: 500px;
+    margin: 0 auto;
+    border: 5px solid #222831;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 400px;
+}
+
+#listaDeTareas span {
+    flex: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+.tarjeta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    border: 5px solid #222831;
+    width: 100%;
+    font-size: 20px;
+}
+
+.botonBorrar {
+    background-color: crimson;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.botonSwitch {
+    background-color: darkgreen;
+    margin-right: 10px;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-family: "Roboto", sans-serif;
+}
+
+.tarjeta.completada span {
+    text-decoration: line-through;
+    text-decoration-thickness: 2px;
+    text-decoration-color: red;
+    color: black;
+}
+
+footer {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #222831;
+}
+
+footer p {
+    color: white;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:538px) {
+    #listaDeTareas {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width:421px) {
+    #listaDeTareas {
+        width: 350px;
+        padding: 10px;
+    }
+
+    .botonSwitch {
+        padding: 5px;
+    }
+
+    .botonBorrar {
+        padding: 5px;
+    }
+}
